@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="rps.css">
+        
+    </head>
+    <body>
+        <!-- Modal (Pop-up message) -->
+        <div class="game-options">
+            <h1 class="texts">Rock Paper Scissors</h1>
+            <div class="buttons-container">     
+                <button class="buttons" id="rock">
+                <img  src="images/rock.png">
+
+                </button>
+
+                <button class="buttons" id="paper">
+                <img  src="images/paper.png">
+                
+                </button>
+
+                <button class="buttons" id="scissors">
+                <img  src="images/scissors.png">
+                
+                </button>
+            </div>  
+        </div>
+        <div class="msg-container">
+            <p style="color: gainsboro;" id="msg">Play your move!</p> 
+        </div>
+
+        <div class="score-board">
+            <div class="scores-user" >
+                <p style="color: rgb(132, 132, 132);">You</p>
+                <p id="user-score" style="color:rgb(132, 132, 132) ;">0</p>
+                
+            </div>
+
+            
+            <div class="scores-ai">
+                <p style="color: rgb(132, 132, 132);">AI</p>
+                <p id="ai-score" style="color: rgb(132, 132, 132);">0</p>
+                
+            </div>
+        </div>
+        <div id="game-modal" class="modal">
+            <div class="modal-content">
+                <h2 id="modal-msg"></h2>
+                <button id="restart-btn">Restart Game</button>
+            </div>
+        </div>
+    </body>
+    <script src="rps.js"> </script>
+
+</html>

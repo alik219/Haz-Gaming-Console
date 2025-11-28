@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAZ Gaming Console</title>
+    <link rel="stylesheet" href="page.css">
+</head>
+<body>
+    <header>
+        HAZ Gaming Console
+    </header>
+
+    <div class="game-container">
+        <a href="rps.html" class="rpc">Rock Paper Scissors</a>
+        <a href="ttt.html" class="TTT">Tic Tac Toe</a>
+        <a href="mm.html" class="MM">Memory Match</a>
+    </div>
+    
+    <div class="login-box">
+        <a href="#" id="loginBtn">Login</a>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="page.js"></script>
+</body>
+</html>
